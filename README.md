@@ -1,6 +1,6 @@
 <div align=center>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Welocome+to+my+GitHub;I+want+be+a+greate+front-end+developer.+)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&random=false&width=435&lines=Welcome+to+my++GitHub.;I'll+be+a+great+front-end+developer.)](https://git.io/typing-svg)
 
 </div>
 
@@ -29,7 +29,7 @@
 <br>
 
 
-<br>
+<div align=center>
   
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=holynow&show_icons=true&theme=radical)
 
