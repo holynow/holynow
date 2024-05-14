@@ -20,7 +20,7 @@
 <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=slack&logoColor=white"> 
 </div>
 
-<div align=center>
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
-</div>
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=holynow&show_icons=true&theme=radical)
+
 
