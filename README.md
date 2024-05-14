@@ -27,9 +27,7 @@
 </div>
 
 <br>
-<div align=center>
-  
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=holynow&layout=compact&theme=dracula)](https://github.com/holynow/github-readme-stats)
+
 
 <br>
   
