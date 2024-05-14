@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=First+line+of+text;Second+line+of+text)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Welcome+to+my+GitHub;I+wnat+be+a+great+frong-end+developer.)](https://git.io/typing-svg)
 
 <div align=center><h3>⭐️ Tech Stacks ⭐️</h3></div>
 <div align=center>
@@ -10,6 +10,8 @@
 <img src="https://img.shields.io/badge/redux-764ABC?style=for-the-badge&logo=redux&logoColor=white">
 <img src="https://img.shields.io/badge/styled components-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white">
 </div>
+
+<br>
 
 <div align=center><h4>★ Tools ★</h4></div>
 <div align=center>
