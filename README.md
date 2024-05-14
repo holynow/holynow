@@ -1,5 +1,8 @@
+<div align=center>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Welocome+to+my+GitHub;I+want+be+a+greate+front-end+developer.)](https://git.io/typing-svg)
+
+</div>
 
 <div align=center><h3>⭐️ Tech Stacks ⭐️</h3></div>
 <div align=center>
