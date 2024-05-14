@@ -29,7 +29,7 @@
 <br>
 <div align=center>
   
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hoheesu&layout=compact&theme=dracula)](https://github.com/hoheesu/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=holynow&layout=compact&theme=dracula)](https://github.com/holynow/github-readme-stats)
 
 <br>
   
