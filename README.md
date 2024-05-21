@@ -17,7 +17,7 @@
 <img src="https://img.shields.io/badge/redux-764ABC?style=for-the-badge&logo=redux&logoColor=white">
 <img src="https://img.shields.io/badge/styled components-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white">
 </div>
----
+
 
 <h3 align="center">📫 Contact 📫</h3>
 <div align="center">
