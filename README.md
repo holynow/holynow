@@ -26,7 +26,7 @@
   </a>
   <a href="eggfile73@gmail.com">
     <img
-      src="https://img.shields.io/badge/dldulwls@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+      src="https://img.shields.io/badge/eggfile73@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
 </div>
 <br>
