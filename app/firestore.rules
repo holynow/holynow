@@ -1,0 +1,48 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+    function groupData(gid) {
+      return get(/databases/$(database)/documents/groups/$(gid)).data;
+    }
+    function isMember(gid) {
+      return signedIn() && request.auth.uid in groupData(gid).memberUids;
+    }
+
+    // 초대코드 -> 목장 ID. 코드를 아는 사람만 조회(get) 가능, 목록 조회(list)는 불가
+    match /invites/{code} {
+      allow get: if signedIn();
+      allow create: if isMember(request.resource.data.groupId);
+      allow delete: if signedIn() && groupData(resource.data.groupId).leaderUid == request.auth.uid;
+    }
+
+    match /groups/{gid} {
+      allow read: if signedIn() && request.auth.uid in resource.data.memberUids;
+      allow create: if signedIn()
+        && request.resource.data.leaderUid == request.auth.uid
+        && request.auth.uid in request.resource.data.memberUids;
+      // 목원은 목장 정보를 수정할 수 있지만 리더는 바꿀 수 없다.
+      // 초대코드로 들어오는 사람은 memberUids에 자기 자신만 추가할 수 있다.
+      allow update: if signedIn() && (
+        (request.auth.uid in resource.data.memberUids
+          && request.resource.data.leaderUid == resource.data.leaderUid)
+        || (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['memberUids'])
+          && request.resource.data.memberUids.toSet()
+             == resource.data.memberUids.toSet().union([request.auth.uid].toSet()))
+      );
+      allow delete: if signedIn() && resource.data.leaderUid == request.auth.uid;
+
+      // 목원 명단, 주간 보고서 등은 목장 구성원끼리 함께 보고 작성
+      match /{sub=**} {
+        allow read, write: if isMember(gid);
+      }
+    }
+
+    // 예배 노트(성경 메모, 설교 필기)는 본인만
+    match /users/{uid}/{doc=**} {
+      allow read, write: if signedIn() && request.auth.uid == uid;
+    }
+  }
+}
